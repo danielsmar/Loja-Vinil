@@ -237,7 +237,7 @@ CREATE TABLE filial.CDs (
 COMMENT ON TABLE filial.CDs IS 'Tabela CD''s';
 COMMENT ON COLUMN filial.CDs.idProduto IS 'Codigo de identificação do produto';
 COMMENT ON COLUMN filial.CDs.Nome_Produto_CD IS 'Nome do CD';
-COMMENT ON COLUMN filial.CDs.Data_lanamento IS 'Data do lançamento do CD';
+COMMENT ON COLUMN filial.CDs.Data_lancamento IS 'Data do lançamento do CD';
 COMMENT ON COLUMN filial.CDs.Genero IS 'Genero musical do disco.';
 COMMENT ON COLUMN filial.CDs.Lote IS 'Lote do CD
 ';
@@ -271,7 +271,7 @@ COMMENT ON TABLE filial.Discos IS 'Tabela Discos
 ';
 COMMENT ON COLUMN filial.Discos.idProduto IS 'Codigo de identificação do produto';
 COMMENT ON COLUMN filial.Discos.Nome_Produto_Disco IS 'Nome do Disco';
-COMMENT ON COLUMN filial.Discos.Data_lanamento IS 'Data do lançamento do Disco';
+COMMENT ON COLUMN filial.Discos.Data_lancamento IS 'Data do lançamento do Disco';
 COMMENT ON COLUMN filial.Discos.Genero IS 'Genero musical do disco.';
 COMMENT ON COLUMN filial.Discos.preco IS 'Preço do produto
 ';
