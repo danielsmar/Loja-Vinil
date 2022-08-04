@@ -1,0 +1,6 @@
+DOCKER 
+
+Entrar no terminal do postgre_DB
+docker exec -it postgre_DB /bin/bash
+
+ psql postgres -U -W -f script.sql
