@@ -1,0 +1,3 @@
+ psql -U postgres -W -f
+senha1: computacao@raiz
+senha2: 123456
