@@ -13,11 +13,13 @@ ___________________________________________________________
 */
 
 
+
 BEGIN;
 -- Criação do usuário para administrar o BD.
 CREATE USER administrador WITH PASSWORD '123456' CREATEDB;
 
 COMMIT;
+
 
 -- Criação do Banco de dados
 
@@ -299,6 +301,11 @@ ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
+
+
+--CRIAÇÃO DO DADOS
+
+
 INSERT INTO filial.funcionario
 (cpf_funcionario, nome_completo, data_nascimento, salario, rg, sexo, telefone, email, cpf_supervisor)
 values
@@ -365,6 +372,7 @@ values
 (2, 20, 2, 12, '2022/02/07'),
 (3, 30, 3, 8, '2022/03/12');
 
+
 -- Faz select dos dados das tabelas
 
 \echo 'mostra dados da tabela funcionario';
@@ -393,3 +401,5 @@ SELECT * FROM filial.itens_pedido;
 
 \echo 'mostra dados da tabela produto';
 SELECT * FROM filial.produto;
+
+
