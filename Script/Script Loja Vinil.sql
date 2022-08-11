@@ -301,7 +301,10 @@ ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
+
+
 --CRIAÇÃO DO DADOS
+
 
 INSERT INTO filial.funcionario
 (cpf_funcionario, nome_completo, data_nascimento, salario, rg, sexo, telefone, email, cpf_supervisor)
@@ -368,3 +371,35 @@ values
 (1, 10, 1, 25, '2022/05/24'),
 (2, 20, 2, 12, '2022/02/07'),
 (3, 30, 3, 8, '2022/03/12');
+
+
+-- Faz select dos dados das tabelas
+
+\echo 'mostra dados da tabela funcionario';
+SELECT * FROM filial.funcionario;
+
+\echo 'mostra dados da tabela endereco_funcionario';
+SELECT * FROM filial.endereco_funcionario;
+
+\echo 'mostra dados da tabela fornecedor';
+SELECT * FROM filial.fornecedor;
+
+\echo 'mostra dados da tabela endereco_fornecedor';
+SELECT * FROM filial.endereco_fornecedor;
+
+\echo 'mostra dados da tabela clientes';
+SELECT * FROM filial.clientes;
+
+\echo 'mostra dados da tabela endereco__cliente';
+SELECT * FROM filial.endereco__cliente;
+
+\echo 'mostra dados da tabela pedido';
+SELECT * FROM filial.pedido;
+
+\echo 'mostra dados da tabela itens_pedido';
+SELECT * FROM filial.itens_pedido;
+
+\echo 'mostra dados da tabela produto';
+SELECT * FROM filial.produto;
+
+
